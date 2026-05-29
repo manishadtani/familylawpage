@@ -881,11 +881,7 @@
 
             emailjs.send('service_5ukbpwr', 'template_sf94sl7', templateParams)
                 .then(function() {
-                    showToast('Thank you! We will contact you within one business day.', true);
-                    document.getElementById(prefix + '-form').reset();
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    btn.style.opacity = '1';
+                    window.location.href = 'https://www.glocallpo.com/thank-you';
                 })
                 .catch(function(error) {
                     showToast('Something went wrong. Please try again or call us directly.', false);
